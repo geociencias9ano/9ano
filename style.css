@@ -1,0 +1,114 @@
+/* Estilos gerais e acessibilidade */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Cabeçalho com imagem de fundo */
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?accessibility,technology') center/cover no-repeat;
+    height: 50vh;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Animação título */
+#titulo-animado {
+    font-size: 3rem;
+    animation: fadeInDown 2s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Seções */
+section {
+    padding: 20px;
+    background: white;
+    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Cards de aplicativos */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: #e6f7ff;
+    padding: 15px;
+    border-radius: 10px;
+    flex: 1 1 calc(33% - 20px);
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+th {
+    background: #0077b6;
+    color: white;
+}
+
+/* Lista de mídias sociais */
+#lista-midias li {
+    margin: 5px 0;
+}
+
+#lista-midias a {
+    color: #0077b6;
+    text-decoration: none;
+}
+
+#lista-midias a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+    }
+}
