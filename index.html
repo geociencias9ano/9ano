@@ -8,10 +8,11 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    <!-- Cabeçalho com imagem de fundo -->
+    <!-- Cabeçalho -->
     <header class="hero">
         <div class="overlay">
             <h1 id="titulo-animado">Ciência e Acessibilidade</h1>
+            <p class="subtitulo">GeoCiências – 9º Ano – Monsenhor</p>
             <p>Promovendo inclusão, autonomia e oportunidades para todos</p>
         </div>
     </header>
@@ -30,9 +31,7 @@
     <!-- Aplicativos -->
     <section id="aplicativos">
         <h2>Aplicativos que ajudam pessoas com deficiência</h2>
-        <div class="cards-container" id="lista-aplicativos">
-            <!-- Cards serão inseridos via JavaScript -->
-        </div>
+        <div class="cards-container" id="lista-aplicativos"></div>
     </section>
 
     <!-- Transporte acessível -->
@@ -46,9 +45,7 @@
                     <th>Disponibilidade</th>
                 </tr>
             </thead>
-            <tbody id="tabela-transporte">
-                <!-- Linhas inseridas via JavaScript -->
-            </tbody>
+            <tbody id="tabela-transporte"></tbody>
         </table>
     </section>
 
@@ -56,45 +53,58 @@
     <section id="midias">
         <h2>Mídias Sociais e Inclusão</h2>
         <p>As redes sociais adaptadas ajudam pessoas com deficiência a se comunicarem e participarem de comunidades online.</p>
-        <ul id="lista-midias">
-            <!-- Links inseridos via JavaScript -->
-        </ul>
+        <ul id="lista-midias"></ul>
     </section>
 
-    <!-- Sustentabilidade e Acessibilidade -->
+    <!-- Feedback -->
+    <section id="feedback">
+        <h2>Deixe seu Feedback</h2>
+        <form id="form-feedback">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="mensagem-feedback"></p>
+    </section>
+
+    <!-- Sustentabilidade -->
     <section>
         <h2>Sustentabilidade e Acessibilidade</h2>
-        <p>
-            Unir sustentabilidade e acessibilidade garante que as soluções para o futuro
-            considerem o meio ambiente e as necessidades de todos.
-        </p>
+        <p>Unir sustentabilidade e acessibilidade garante que as soluções para o futuro
+            considerem o meio ambiente e as necessidades de todos.</p>
     </section>
 
     <!-- Prevenção do isolamento -->
     <section>
         <h2>Prevenção do Isolamento e Participação na Cultura</h2>
-        <p>
-            A participação ativa em eventos culturais e comunitários previne o isolamento
-            social e promove bem-estar.
-        </p>
+        <p>A participação ativa em eventos culturais e comunitários previne o isolamento
+            social e promove bem-estar.</p>
     </section>
 
     <!-- Acesso à educação -->
     <section>
         <h2>Acesso à Educação e Autonomia</h2>
-        <p>
-            Tecnologias assistivas e métodos de ensino adaptados permitem que todos tenham
-            oportunidades iguais de aprendizado.
-        </p>
+        <p>Tecnologias assistivas e métodos de ensino adaptados permitem que todos tenham
+            oportunidades iguais de aprendizado.</p>
     </section>
 
     <!-- Inclusão social -->
     <section>
         <h2>Inclusão Social e Independência</h2>
-        <p>
-            A inclusão social oferece independência e dignidade, permitindo que as pessoas
-            participem plenamente da sociedade.
-        </p>
+        <p>A inclusão social oferece independência e dignidade, permitindo que as pessoas
+            participem plenamente da sociedade.</p>
+    </section>
+
+    <!-- Contador de visitas -->
+    <section id="contador">
+        <h2>Visitas ao Site</h2>
+        <div class="contador-box">
+            <span id="visitas">0</span>
+        </div>
     </section>
 
     <!-- Rodapé -->
